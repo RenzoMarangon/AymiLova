@@ -1,0 +1,59 @@
+@media screen and (min-width:900px){
+    main{
+        .main-container{
+            max-width: 1440px;
+            margin: auto;
+            .main-container__about-me{
+                width: 100%;
+                min-height: 70vh;
+                display: grid;
+                grid-template-areas: "foto texto";
+                grid-template-columns: 1fr 2fr;
+                padding: 5rem;
+                position: relative;
+                .main-container__about-me__photo{
+                    grid-area: foto;
+                    display: flex;
+                    align-items: flex-start;
+                    z-index: 20;
+                    img{
+                        width:100%;
+                        z-index: -1;
+
+                    }
+
+                    .mancha-rosa{
+                        position: absolute;
+                        width: 10%;
+                        top:5rem;
+                        z-index: -1;
+                    }
+                }
+
+                .main-container__about-me__text{
+                    padding-top: 5rem;
+                    grid-area: texto;
+                    z-index: 20;
+                }
+
+                .deco-1{
+                    position: absolute;
+                    contain:"";
+                    height:80%;
+                    width: 100%;
+                    top:15%;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 68.53%);
+                    backdrop-filter: blur(16px);
+                    z-index: 10;
+                    border-radius: .5rem;
+                }
+
+                .sticker{
+                    position: absolute;
+                    top: -8rem;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

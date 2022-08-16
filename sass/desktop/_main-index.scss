@@ -1,0 +1,75 @@
+@media screen and (min-width:900px) {
+    .main-container{
+        .main-container__index{
+            max-width: 1440px;
+            display: grid;
+            grid-template-areas: "logo foto";
+            grid-template-columns: 2fr fr;
+            justify-content: space-evenly;
+            margin: auto;
+            -webkit-box-shadow: inset 0px 16px 11px -11px rgba(0,0,0,0.29); 
+            box-shadow: inset 0px 16px 11px -11px rgba(0,0,0,0.29);
+            padding: 1rem;
+            .main-container__index__carrousel{
+                grid-area: foto;
+                display: grid;
+                grid-template-areas: "template";
+                z-index: 10;
+                min-height: 80vh;
+                margin-right: 10rem;
+
+                img{
+                    width: 28vw;
+                    z-index: 20;
+                    grid-area: template;
+                    -webkit-box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.22); 
+                    box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.22);
+                }           
+    
+                .deco-1,.deco-2{
+                    grid-area: template;
+                    contain: "";
+                    width: 20vw;
+                    height: 20vh;
+
+                    
+                }
+                .deco-1{
+                    background-color: $secondaryColor;
+                    margin-bottom: 45%;
+                    margin-left: 35%;
+                }
+                .deco-2{
+                    background-color: #fff;
+                    margin-top: 45%;
+                    margin-left:-5%;
+                }
+
+
+            }
+    
+            .main-container__index__logo{
+                grid-area: logo;
+                z-index: 10;
+                img{
+                    width: 18vw;
+                }
+                p{
+                    max-width: 44%;
+                    font-size: 2.5rem;
+                }
+    
+
+            }
+
+            .mancha{
+                width: 100%;
+                position: absolute;
+                max-width: 1440px;
+                margin-left: -1rem;
+                z-index: 1;
+            }
+            
+        }
+    }
+}

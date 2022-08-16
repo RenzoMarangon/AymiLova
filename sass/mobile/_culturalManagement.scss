@@ -1,0 +1,43 @@
+.main-container__services__gestion-cultural {
+    max-width: 95%;
+    margin: 0 auto 3rem;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: $blackColor;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .main-container__services__gestion-cultural__dropdown-1 {
+        .dropdown__title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: $whiteColor;
+            text-align: center;
+            margin: 1rem 0;
+            padding: 2rem 0;
+            background-color: $primaryColor;
+            text-align: center;
+
+            h4 {
+                max-width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .main-container__services__gestion-cultural__dropdown-2 {
+    .dropdown__title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: $whiteColor;
+        text-align: center;
+        margin: 1rem 0;
+        padding: 2rem 0;
+        background-color: $blackColor;
+    }
+}
+
+}

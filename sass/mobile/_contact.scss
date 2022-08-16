@@ -1,0 +1,68 @@
+.footer-container__contact {
+    background-color: $primaryColor;
+
+    .contact-container__title {
+        font-size: 5rem;
+        font-weight: bold;
+        color: $whiteColor;
+        text-align: center;
+    }
+
+    .footer-container__contact__form {
+        max-width: 95%;
+        margin: 2rem auto;
+        padding: 2rem 0;
+        background-color: rgba($thirdColor, 0.9);
+        text-align: center;
+
+        label {
+            font-size: 2rem;
+            display: block;
+            font-weight: bold;
+            color: $blackColor;
+            margin: 0;
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            height: 4rem;
+            font-size: 1.5rem;
+            margin: 0 0 1rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            width: 80%;
+            height: 10rem;
+            font-size: 1.5rem;
+            resize: none;
+            border: none;
+            border-bottom: 1px solid $blackColor;
+            margin: 0 0 1rem;
+            padding: 0;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            width: 80%;
+            height: 4rem;
+            font-size: 1.5rem;
+            background-color: $blackColor;
+            color: $whiteColor;
+            border: none;
+            border-radius: 5px;
+            margin: 0 0 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: $primaryColor;
+            }
+        }
+    }
+}

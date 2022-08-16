@@ -1,0 +1,101 @@
+@media screen and (min-width:900px) {
+    main{
+        .main-container{
+            .main-cointainer__services{
+                max-width: 1440px;
+                margin: auto;
+                position: relative;
+                .title{
+                    font-size: 5rem;
+                    text-align: start;
+                    padding: 10rem 0 5rem 2rem;
+                }
+
+                .mancha{
+                    position: absolute;
+                    top:0;
+                    z-index: -1;
+                }
+                //MURALISMO
+                .main-container__services__muralismo{
+                    .main-container__services__muralismo__dropdown-1,
+                    .main-container__services__muralismo__dropdown-4{
+                        .dropdown{
+                            background-color: $secondaryColor;
+                            width: 100%;
+                            cursor:pointer;
+                            display: block;
+                            .dropdown__title{
+                                background-color: transparent;
+                                padding: 2rem;
+    
+                                text-align: start;
+                            }
+                        }
+                    }
+    
+                    .main-container__services__muralismo__dropdown-3{
+                        .dropdown{
+                            background-color: #000;
+                            width: 100%;
+                            cursor:pointer;
+    
+                            .dropdown__title{
+                                background-color: transparent;
+                                padding: 2rem;
+    
+                                text-align: start;
+                            }
+                        }
+                    }
+    
+                    .main-container__services__muralismo__dropdown-2{
+                        .dropdown{
+                            background-color: $primaryColor;
+                            width: 100%;
+                            cursor:pointer;
+    
+                            .dropdown__title{
+                                background-color: transparent;
+                                padding: 2rem;
+    
+                                text-align: start;
+                            }
+                        }
+                    }
+                }
+                
+
+                //GEST CULTURAL
+                .main-container__services__gestion-cultural{
+                    max-width: 1440px;
+ 
+                    .main-container__services__gestion-cultural__dropdown-1,
+                    .main-container__services__gestion-cultural__dropdown-2{
+                        .dropdown{
+                            background-color: $primaryColor;
+                            width: 100%;
+                            cursor:pointer;
+    
+                            .dropdown__title{
+                                background-color: transparent;
+                                padding: 2rem;
+                                text-align: start;
+                                h4{
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        &:last-child{
+                            .dropdown{
+                                background-color: #000;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

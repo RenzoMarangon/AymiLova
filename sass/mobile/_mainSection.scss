@@ -1,0 +1,34 @@
+.main-container__index {
+    background-color: $primaryColor;
+
+    .main-container__index__carrousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding-top: 6rem;
+    }
+
+    .main-container__index__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        
+        img {
+            filter: invert(1);
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $whiteColor;
+            text-align: center;
+            max-width: 12rem;
+            margin: 0 0 4rem;
+            color: $whiteColor;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@media screen and (min-width:900px) {
+    header{
+        .header-container{
+            max-width: 1440px;
+            height: 100%;
+            display: grid;
+            grid-template-areas: "logo marca links";
+            grid-template-columns: .5fr 4fr 4fr;
+            align-content: center;
+            justify-content:space-around;
+            margin: auto;
+            padding: 0;
+            z-index: 100;
+            
+            //MENU HAMBURGUESA
+            .header-container__hamburguer{
+                display: none;
+            }
+    
+            .header-container__links{
+                display: block;
+                justify-self: right;
+                height: 100%;
+                
+                ul{
+                    display: flex;
+                    grid-area: links;
+                    height: 100%;
+                    list-style: none;
+                    li{
+                        margin-right: .2rem;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $secondaryColor;
+                            font-size: 2.5rem;
+                            height: 100%;
+                            min-width: 8vw;
+                            text-decoration: none;
+                            color:#000;
+                            font-weight: bold;
+
+
+                            &:hover{
+                                color:#fff;
+                                background-color: #000;
+                            } 
+                        }
+                        &:last-child{
+                            margin-right: 0;
+
+                        }
+                    }
+                }
+            }
+    
+            .header-container__marca{
+                grid-area: marca; 
+                justify-self: left;
+                padding: 1rem 0;
+                img{
+                    width: 100%;
+                    height: 8rem;
+                }               
+            }
+            .header-container__logo{
+                justify-self: left;
+                padding: 1rem 0;
+                padding-left: 2rem;
+
+                grid-area: logo; 
+                img{
+                    width: 8rem;
+                    height: 8rem;
+                }
+            }
+        }
+    }
+}

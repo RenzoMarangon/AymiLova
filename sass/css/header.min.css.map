@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAI,AAAA,MAAM,AAAA,CACF,UAAU,CAAE,eAAe,CAC9B,AAED,AAAA,IAAI,AAAA,CACA,KAAK,CAAE,MAAM,CAChB",
+    "sources": [
+        "../desktop/header.scss"
+    ],
+    "names": [],
+    "file": "header.min.css"
+}

@@ -58,3 +58,19 @@
         overflow: hidden;
     }
 }
+
+@media screen and (max-width:899px) {
+    .main-cointainer__services{
+        position: relative;
+        .title{
+            padding: 5rem 0;
+        }
+        .mancha{
+            position: absolute;
+            top: -1rem;
+            z-index: -1;
+            width: 50%;
+            left: 8rem;
+        }
+    }
+}

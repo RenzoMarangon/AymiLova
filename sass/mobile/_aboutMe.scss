@@ -1,6 +1,7 @@
 .main-container__about-me {
     background-color: $blackColor;
-    
+    padding-top: 2rem;
+
     .main-container__about-me__photo {
         max-width: 90%;
         display: flex;
@@ -8,6 +9,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 100;
+
+        .aymi{
+            z-index: 5;
+        }
 
         h2 {
             font-size: 4rem;
@@ -15,6 +21,7 @@
             color: $whiteColor;
             text-align: center;
             margin: 2rem 0;
+            z-index: 100;
         }
     }
 
@@ -25,5 +32,27 @@
         padding: 2rem 0;
         max-width: 70%;
         font-size: 2rem;
+
+
+    }
+}
+
+@media screen and (max-width:899px) {
+    .main-container__about-me{
+        position: relative;
+
+
+        .mancha-rosa{
+            position: absolute;
+            top: -3rem;
+            z-index: 10;
+            width: 50%;
+        }
+
+        .sticker{
+ 
+            display: none;
+
+        }
     }
 }

@@ -1,6 +1,7 @@
 .main-container__index {
     background-color: $primaryColor;
-
+    max-width: 450px;
+    overflow-x: hidden;
     .main-container__index__carrousel {
         display: flex;
         justify-content: center;
@@ -8,6 +9,10 @@
         height: 100%;
         width: 100%;
         padding-top: 6rem;
+        img{
+            z-index: 100;
+
+        }
     }
 
     .main-container__index__logo {
@@ -16,9 +21,10 @@
         justify-content: center;
         align-items: center;
         margin-top: 5rem;
-        
+
         img {
             filter: invert(1);
+            z-index: 100;
         }
 
         p {
@@ -29,6 +35,43 @@
             max-width: 12rem;
             margin: 0 0 4rem;
             color: $whiteColor;
+            z-index: 100;
+        }
+
+  
+    }
+}
+
+@media screen and (max-width:899px) {
+    .main-container__index {
+        position: relative;
+        .mancha{
+            position:absolute;
+            width: 100%;
+            height: 25%;
+            top:55rem;
+            z-index: 10;
+        }
+
+        .deco-1,.deco-2{
+            contain: "";
+            width: 22rem;
+            height: 15rem;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .deco-1{
+            background-color: #fff;
+            top:4rem;
+            right: 4rem;
+
+        }
+
+        .deco-2{
+            top: 12rem;
+            left: 4rem;
+            background-color: $secondaryColor;
         }
     }
 }

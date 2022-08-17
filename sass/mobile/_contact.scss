@@ -1,38 +1,57 @@
 .footer-container__contact {
     background-color: $primaryColor;
 
+
     .contact-container__title {
         font-size: 5rem;
         font-weight: bold;
         color: $whiteColor;
-        text-align: center;
+        grid-area: title;
+
+    }
+
+    .footer-container__contact__img{
+        grid-area: img;
     }
 
     .footer-container__contact__form {
+        grid-area: form;
         max-width: 95%;
-        margin: 2rem auto;
+        margin: 2rem auto 0;
         padding: 2rem 0;
         background-color: rgba($thirdColor, 0.9);
         text-align: center;
+        display: flex;
+        flex-direction: column;
 
         label {
             font-size: 2rem;
             display: block;
             font-weight: bold;
             color: $blackColor;
-            margin: 0;
-            text-align: center;
+            margin: auto;
+            text-align: left;
+            width: 80%;
         }
 
         input {
-            width: 80%;
+            width: 80% ;
             height: 4rem;
             font-size: 1.5rem;
             margin: 0 0 1rem;
-
+            border: none;
+            padding: 1rem;
             &:focus {
                 outline: none;
             }
+        }
+
+        .footer-container__contact__form__send{
+            width: 40%;
+            align-self: flex-end;
+            justify-self: flex-end;
+            margin-right: 10%;
+
         }
 
         textarea {
@@ -41,9 +60,8 @@
             font-size: 1.5rem;
             resize: none;
             border: none;
-            border-bottom: 1px solid $blackColor;
             margin: 0 0 1rem;
-            padding: 0;
+            padding: 1rem;
             &:focus {
                 outline: none;
             }
@@ -64,5 +82,62 @@
                 background-color: $primaryColor;
             }
         }
+    }
+}
+
+@media screen and (max-width:899px){
+    .footer-container__contact{
+        position: relative;
+        .contact-container__title{
+            min-height: 12rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2{
+                z-index: 100;
+            }
+            img{
+                position: absolute;
+                width: 18rem;
+                z-index: 10;
+            }
+        }
+
+        .footer-container__contact__img{
+            position: relative;
+
+            .mancha{
+                position: absolute;
+                bottom: 0;
+                width: 40%;
+            }
+
+
+        }
+
+
+        .footer-container__contact__media-buttons{
+            position: absolute;
+            bottom: 2rem;
+            left: 12%;
+            display: flex;
+
+            img{
+                width: 50px;
+                background-color: #fff;
+                border-radius: 50px;
+                border: solid 2px #000;
+                padding: 2px;
+                margin-right: 1rem;
+            }
+
+
+        }
+
+
+        .footer-container__contact__button-to-top{
+            display: none;
+        }
+
     }
 }

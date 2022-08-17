@@ -21,3 +21,9 @@ dropdowns.forEach(e => {
     e.addEventListener('click',showContent);
 })
 
+if(window.innerWidth < 900 ){
+    const mancha = document.getElementsByClassName('mancha-cruz-contacto');
+    mancha[0].src = '../img/cruz-roja-contacto.png'
+}
+
+

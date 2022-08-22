@@ -1,18 +1,17 @@
-const dropdowns = document.querySelectorAll('.dropdown');
+const dropdowns = document.querySelectorAll('.dropdown__title');
 
 const showContent = function() {
-    const body = this.querySelector('.dropdown__body')
-    console.log(body)
+
+    const dropdown = this.parentElement;
+    const body =  dropdown.querySelector('.dropdown__body')
     const currentHeight = body.offsetHeight;
     const height = body.scrollHeight;
 
     if(currentHeight === 0){
         body.style.background = "#fff";
-        console.log('siuuu')
         body.style.height = height+"px";
     }else{
         body.style.height = 0;
-        console.log('niuuu')
     }
 
 }

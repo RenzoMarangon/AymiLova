@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600;700&display=swap');
 
-
 @import './mobile/root';
 @import './mobile/colors';
 @import './mobile/header';
@@ -11,9 +10,11 @@
 @import './mobile/culturalManagement';
 @import './mobile/contact';
 @import './mobile/footer';
+@import './mobile/carrousel';
 
 @import './desktop/header';
 @import './desktop/main-index';
 @import './desktop/main-about-me';
 @import './desktop/main-services';
 @import './desktop/footer-contact';
+

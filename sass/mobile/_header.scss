@@ -7,6 +7,7 @@
     background-color: $whiteColor;
     padding: 2rem;
 
+
     .header-container__hamburguer {
         font-size: 5rem;
         display: flex;
@@ -14,8 +15,9 @@
         align-items: center;
     }
 
-    .header-container__links {
-        display: none;
+
+    .header-container__links{
+        
     }
 
 
@@ -34,4 +36,34 @@
         }
     }
 
+}
+
+@media screen and (max-width:900px) {
+    .header-container__links {
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top:6rem;
+        left: 0;
+        z-index: 10000;
+        background-color: $primaryColor;
+        transition: all ease-out .4s;
+        li{
+            padding: 1rem 2rem;
+            background-color: $secondaryColor;
+            margin-bottom: .2rem;
+            
+            &:last-child{
+                border: none;
+            }
+            a{
+                font-size: 2rem;
+                text-decoration: none;
+                color: #000;
+
+            }
+        }
+        
+    }
 }

@@ -2,6 +2,7 @@
     .main-container{
         .main-container__index{
             max-width: 1440px;
+            height: 91vh;
             display: grid;
             grid-template-areas: "logo foto";
             grid-template-columns: 2fr fr;
@@ -17,32 +18,35 @@
                 z-index: 10;
                 min-height: 80vh;
                 margin-right: 10rem;
-
+                position: relative;
                 img{
-                    width: 28vw;
+                    width: 40vh;
                     z-index: 20;
+                    margin-right: 5rem;
+                    margin-bottom: 15rem;
                     grid-area: template;
                     -webkit-box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.22); 
                     box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.22);
                 }           
     
                 .deco-1,.deco-2{
+                    position: absolute;
                     grid-area: template;
                     contain: "";
                     width: 20vw;
-                    height: 20vh;
+                    height: 18vh;
 
                     
                 }
                 .deco-1{
                     background-color: $secondaryColor;
-                    margin-bottom: 45%;
-                    margin-left: 35%;
+                    top: 20%;
+                    right: 5%;
                 }
                 .deco-2{
+                    left: -5%;
                     background-color: #fff;
-                    margin-top: 45%;
-                    margin-left:-5%;
+
                 }
 
 
@@ -55,7 +59,7 @@
                     width: 18vw;
                 }
                 p{
-                    max-width: 44%;
+                    max-width: 100%;
                     font-size: 2.5rem;
                 }
     

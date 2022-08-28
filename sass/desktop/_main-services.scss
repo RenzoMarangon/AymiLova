@@ -13,8 +13,10 @@
 
                 .mancha{
                     position: absolute;
-                    top:0;
+                    top:4rem;
+                    left: 2rem;
                     z-index: -1;
+                    width: 20rem;
                 }
                 //MURALISMO
                 .main-container__services__muralismo{
@@ -105,11 +107,8 @@
                     .dropdown{
                         .dropdown__body{
                             p{
-                                text-align: center;
                                 font-size: 2rem;
-                                width: 80%;
-                                padding: 2rem 0;
-                                margin:auto;
+                                padding: 2rem;
                             }
                         }
                     }

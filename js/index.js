@@ -52,10 +52,13 @@ const showHiddenLinks = ()=>{
     }  
 }
 
-menuHamburguesa.addEventListener('click', showHiddenLinks);
-links.forEach(e => {
-    e.addEventListener('click',showHiddenLinks);
-})
+//Responsive
+if(document.body.clientWidth <= 900){
+    menuHamburguesa.addEventListener('click', showHiddenLinks);
+    links.forEach(e => {
+        e.addEventListener('click',showHiddenLinks);
+    })
+}
 
 
 

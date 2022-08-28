@@ -1,6 +1,7 @@
 .main-container__index {
     background-color: $primaryColor;
     max-width: 450px;
+    margin: auto;
     overflow-x: hidden;
     .main-container__index__carrousel {
         display: flex;
@@ -21,6 +22,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 5rem;
+        margin-bottom: 5rem;
 
         img {
             filter: invert(1);
@@ -32,7 +34,7 @@
             font-weight: bold;
             color: $whiteColor;
             text-align: center;
-            max-width: 12rem;
+            max-width: 100%;
             margin: 0 0 4rem;
             color: $whiteColor;
             z-index: 100;

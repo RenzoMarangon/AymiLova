@@ -1,5 +1,7 @@
 .footer-container__contact {
     background-color: $primaryColor;
+    max-width: 450px;
+    margin: auto;
 
 
     .contact-container__title {
@@ -12,6 +14,13 @@
 
     .footer-container__contact__img{
         grid-area: img;
+    }
+
+    .footer-container__contact__text{
+        text-align: center;
+        font-size: 2.5rem;
+        color:#fff;
+        padding: 2rem 0;
     }
 
     .footer-container__contact__form {

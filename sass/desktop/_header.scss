@@ -21,27 +21,27 @@
                 display: block;
                 justify-self: right;
                 height: 100%;
-                
                 ul{
                     display: flex;
                     grid-area: links;
                     height: 100%;
                     list-style: none;
+
                     li{
                         margin-right: .5rem;
+                        width: 15rem;
                         a{
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             background-color: $secondaryColor;
-                            font-size: 2.5rem;
+                            font-size: 2.2rem;
                             height: 100%;
-                            min-width: 5.5vw;
                             text-decoration: none;
                             color:#000;
                             font-weight: bold;
                             border-radius: 1.5px;
-
+                            padding: 0 .4rem;
                             &:hover{
                                 color:#fff;
                                 background-color: #000;

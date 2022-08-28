@@ -1,5 +1,5 @@
 .main-cointainer__services {
-    max-width: 95%;
+    max-width: 450px;
     margin: 0 auto;
 
     h2 {
@@ -10,56 +10,39 @@
         margin: 2rem 0;
     }
     .dropdown__body{
+        text-align: left;
         transition: all ease-out .5s;
-    }
-
-    .main-container__services__muralismo__dropdown-1, .main-container__services__muralismo__dropdown-4 {
-        .dropdown__title {
-            font-size: 3.5rem;
-            font-weight: bold;
-            color: $blackColor;
-            text-align: center;
-            margin: 1rem 0;
-            padding: 2rem 0;
-            background-color: $secondaryColor;
+        height: 0;
+        overflow: hidden;
+        p{
+            font-size: 1.5rem;            
         }
-
     }
+    .dropdown__title{
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 1rem 0;
+        padding: 2rem 0;
+        color: $blackColor;
+        background-color: $secondaryColor;
+    }
+
 
     .main-container__services__muralismo__dropdown-2 {
         .dropdown__title {
-            font-size: 3.5rem;
-            font-weight: bold;
             color: $whiteColor;
-            text-align: center;
-            margin: 1rem 0;
-            padding: 2rem 0;
             background-color: $primaryColor;
         }
-
     }
 
     .main-container__services__muralismo__dropdown-3 {
         .dropdown__title {
-            font-size: 3.5rem;
-            font-weight: bold;
             color: $whiteColor;
-            text-align: center;
-            margin: 1rem 0;
-            padding: 2rem 0;
             background-color: $blackColor;
         }
-
     }
 
-
-    .dropdown__body {
-        height: 0;
-        overflow: hidden;
-        p{
-            font-size: 1.5rem;
-        }
-    }
 }
 
 @media screen and (max-width:899px) {

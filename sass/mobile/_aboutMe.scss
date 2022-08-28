@@ -1,7 +1,8 @@
 .main-container__about-me {
     background-color: $blackColor;
     padding-top: 2rem;
-
+    max-width: 450px;
+    margin: auto;
     .main-container__about-me__photo {
         max-width: 90%;
         display: flex;
@@ -41,12 +42,15 @@
     .main-container__about-me{
         position: relative;
 
+        .about-me__title-decoration{
+            z-index: 1000;
+        }
 
         .mancha-rosa{
             position: absolute;
-            top: -3rem;
-            z-index: 10;
-            width: 50%;
+            top: 0;
+            z-index: -1;
+            width: 35%;
         }
 
         .sticker{

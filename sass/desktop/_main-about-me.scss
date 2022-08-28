@@ -4,36 +4,49 @@
             max-width: 1440px;
             margin: auto;
             .main-container__about-me{
-                width: 100%;
+                max-width: 1440px;
                 min-height: 70vh;
                 display: grid;
                 grid-template-areas: "foto texto";
                 grid-template-columns: 1fr 2fr;
                 padding: 5rem;
                 position: relative;
+                min-height: 50vh;
+                flex-wrap: wrap;
+
                 .main-container__about-me__photo{
                     grid-area: foto;
                     display: flex;
                     align-items: flex-start;
                     z-index: 20;
+                    height: 100%;
                     img{
-                        width:100%;
+                        width:45rem;
                         z-index: -1;
 
+                    }
+
+                    .about-me__title-decoration{
+                        position: relative;
+                        z-index: 1000;
                     }
 
                     .mancha-rosa{
                         position: absolute;
-                        width: 10%;
-                        top:15rem;
+                        width:15rem;
                         z-index: -1;
+                        top: -2rem;
                     }
                 }
 
                 .main-container__about-me__text{
+                    z-index: 2000;
+                    display: flex;
+                    align-items: center;
                     padding-top: 10%;
-                    grid-area: texto;
-                    z-index: 20;
+                    p{
+                        grid-area: texto;
+                    }
                 }
 
                 .deco-1{

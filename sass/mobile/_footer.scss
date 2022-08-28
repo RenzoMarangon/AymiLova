@@ -1,7 +1,8 @@
 .footer-container__contact__img {
     background-color: $blackColor;
     padding: 5rem 0;
-
+    max-width: 450px;
+    margin: auto;
     img {
         display: block;
         margin: 0 auto;

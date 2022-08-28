@@ -6,7 +6,8 @@
     align-items: center;
     background-color: $whiteColor;
     padding: 2rem;
-
+    max-width: 450px;
+    margin: auto;
 
     .header-container__hamburguer {
         font-size: 5rem;
@@ -38,7 +39,7 @@
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:899px) {
     .header-container__links {
         width: 0%;
         height: 100%;

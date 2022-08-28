@@ -14,7 +14,7 @@ const glidr = function(carrousel,i){
             breakpoint: 900,
             settings: {
               // Set to `auto` and provide item width to adjust to viewport
-              slidesToShow: 4,
+              slidesToShow: 3,
               slidesToScroll: 1,
             }
           },{

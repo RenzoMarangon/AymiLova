@@ -21,12 +21,6 @@ dropdowns.forEach(e => {
     e.addEventListener('click',showContent);
 })
 
-//CAMBIAR COLOR DE CRUZ
-if(window.innerWidth < 900 ){
-    const mancha = document.getElementsByClassName('mancha-cruz-contacto');
-    mancha[0].src = './img/cruz-roja-contacto.png'
-}
-
 
 //MENU DESPLEGABLE MOBILE
 const menuHamburguesa = document.querySelector('.header-container__hamburguer');
@@ -59,7 +53,6 @@ if(document.body.clientWidth <= 900){
         e.addEventListener('click',showHiddenLinks);
     })
 }
-
 
 
 

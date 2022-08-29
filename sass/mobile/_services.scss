@@ -14,6 +14,8 @@
         transition: all ease-out .5s;
         height: 0;
         overflow: hidden;
+        width: 90%;
+        margin:auto;
         p{
             font-size: 1.5rem;            
         }
@@ -27,7 +29,6 @@
         color: $blackColor;
         background-color: $secondaryColor;
     }
-
 
     .main-container__services__muralismo__dropdown-2 {
         .dropdown__title {

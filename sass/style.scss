@@ -17,68 +17,12 @@
 @import './desktop/main-about-me';
 @import './desktop/main-services';
 @import './desktop/footer-contact';
+@import './mobile/modal';
 
 
 
 
 
-.modal-container{
-    width:100vw;
-    height:100vh;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:10000;
-    overflow:hidden;
-    background:rgba(0, 0, 0, 0.651);
-    display:none;
-    align-items: center;
-    justify-content: center;
-    img{
-       
-        width: 100%;
-        height: auto;        
-    }
-    p{
-        
-        font-size: 4rem;
-        position: absolute;
-        top: 0;
-        right: 1.5rem;
-        i{
-            border: solid 3px #fff;
-            border-radius: 100%;
-            background-color: #fff;
-
-        }
-
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-
-
-@media screen and (min-width:900px) {
-    .modal-container{
-    img{
-        max-height: 100% !important;
-        width: auto;        
-    }
-    p{
-        position:static;
-        font-size: 10rem;
-        align-self: flex-start;
-        margin-left: 1rem;
-        transition: ease-in-out .2s;
-        cursor: pointer;
-
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-}
 
 
 

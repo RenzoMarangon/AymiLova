@@ -46,13 +46,59 @@ const showHiddenLinks = ()=>{
     }  
 }
 
+//PARA QUE AL APRETAR EL CONTENEDOR DEL LINK, TE LLEVE IGUAL
+const createButtonLinks = ( link )=>{
+    const btn = link.querySelector('a');
+    link.addEventListener('click',()=>{
+        btn.click();
+    })
+    
+}
+
 //Responsive
 if(document.body.clientWidth <= 900){
     menuHamburguesa.addEventListener('click', showHiddenLinks);
+    
     links.forEach(e => {
         e.addEventListener('click',showHiddenLinks);
+        createButtonLinks(e);
     })
 }
+
+
+//MOSTRAR//OCULTAR FOTOS
+
+const carrouselElements = [...document.querySelectorAll('.carrousel__element')];
+
+const showModal = (url) =>{
+    const modal = document.querySelector(".modal-container");
+    let modalImage = modal.getElementsByTagName('img')[0]
+    modalImage.src = url
+    modal.style.display="flex";
+}
+
+const hiddenModal = function() {
+    const modal = this.parentElement;
+    modal.style.display="none"
+}
+
+const showImages = function(){
+    //RECORTAR URL
+    const image = this.getElementsByTagName('img')[0];
+    let url = image.src.split('/');
+    url = `./${url[3]}/${url[4]}`;
+    showModal(url);
+}
+
+carrouselElements.forEach(e => {
+    e.addEventListener('click',showImages);
+})
+
+const crossModal = document.querySelector('.modal__close-modal');
+
+crossModal.addEventListener('click',hiddenModal);
+
+
 
 
 

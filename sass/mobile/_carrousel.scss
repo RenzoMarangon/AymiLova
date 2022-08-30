@@ -9,14 +9,20 @@
                 overflow: hidden;
 
                 .carrousel__element{
-                    max-width: 600px;
+                    max-width: 400px;
                     margin: 0;
                     height: 100%;
                     width: auto;
-                    padding: 1rem;
+                        transition: ease-in-out .5s;
+                        padding: 1rem;
                     img{
-                        width:500px;
+                        width:350px;
                         height: 100%;
+
+                        
+                    }
+                    &:hover{
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -35,9 +41,11 @@
                 color: #fff;
                 opacity: .8;
                 cursor: pointer;
+                transition: ease-in-out .2s;
 
                 &:hover{
                     opacity: 1;
+                    transform: scale(1.2);
                    
                 }
             }

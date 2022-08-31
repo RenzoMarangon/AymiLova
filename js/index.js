@@ -86,7 +86,7 @@ const showImages = function(){
     //RECORTAR URL
     const image = this.getElementsByTagName('img')[0];
     let url = image.src.split('/');
-    url = `${document.URL}img/${url[5]}`;
+    url = `img/${url[5]}`;
     showModal(url);
 }
 

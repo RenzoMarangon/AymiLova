@@ -10,14 +10,15 @@ const glidr = function(carrousel,i){
         ,
         responsive: [
           {
-            // screens greater than >= 900px
-            breakpoint: 900,
+            // screens greater than >= 1100px
+            breakpoint: 1400,
             settings: {
               // Set to `auto` and provide item width to adjust to viewport
               slidesToShow: 4,
               slidesToScroll: 1,
             }
-          },{
+          },
+          {
             breakpoint: 450,
             settings: {
               slidesToShow: 2,

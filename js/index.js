@@ -1,3 +1,4 @@
+
 //DROPDOWNS
 const dropdowns = document.querySelectorAll('.dropdown__title');
 
@@ -70,33 +71,48 @@ if(document.body.clientWidth <= 900){
 
 const carrouselElements = [...document.querySelectorAll('.carrousel__element')];
 
-const showModal = (url) =>{
+const hiddenModal = function(carrousel,carrouselParent) {
     const modal = document.querySelector(".modal-container");
-    let modalImage = modal.getElementsByTagName('img')[0]
-    modalImage.src = url
-    modal.style.display="flex";
+    carrouselParent.append(carrousel);
+
+    modal.innerHTML='<p class="modal__close-modal"><i class="fa-solid fa-circle-xmark"></i></p>'
+    modal.style.height="0px"
+
+    carrouselElements.forEach(e => {
+        e.addEventListener('click',showModal);
+    })
 }
 
-const hiddenModal = function() {
-    const modal = this.parentElement;
-    modal.style.display="none"
+const eliminateEvent = (carrouselElements) =>{
+    carrouselElements.forEach(e => e.removeEventListener('click',showModal))
 }
 
-const showImages = function(){
-    //RECORTAR URL
-    const image = this.getElementsByTagName('img')[0];
-    let url = image.src.split('/');
-    url = `img/${url[5]}`;
-    showModal(url);
+const showModal = function(){
+    eliminateEvent(carrouselElements)
+
+    const modal = document.querySelector(".modal-container");
+
+    const carrousel = this.parentElement.parentElement.parentElement.parentElement;
+    const carrouselParent = carrousel.parentElement;
+    
+    modal.append(carrousel)
+
+    modal.style.height="100vh";
+
+    const crossModal = modal.querySelector('.modal__close-modal');
+    crossModal.addEventListener('click',()=>{hiddenModal(carrousel,carrouselParent)});
+
+    
 }
+
 
 carrouselElements.forEach(e => {
-    e.addEventListener('click',showImages);
+    e.addEventListener('click',showModal);
 })
 
-const crossModal = document.querySelector('.modal__close-modal');
 
-crossModal.addEventListener('click',hiddenModal);
+
+
 
 
 

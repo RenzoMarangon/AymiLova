@@ -7,39 +7,41 @@
     z-index:10000;
     overflow:hidden;
     background:rgba(0, 0, 0, 0.651);
-    
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;
-    img{
-        width:100% !important;
-    }
+    display: flex;
+    flex-direction: column;
     p{
-        font-size:4rem;
-
+        align-self: center;
+        justify-self: center;
+        cursor: pointer;
+        margin-top: 1rem;
+        i{
+            font-size:4rem;
+            margin: 0;
+            background-color: #fff;
+            border-radius: 2rem;
+            outline: solid 3px #fff;
+        }
     }
 
-
+    
     
         .carrousel-container{
+
             display: flex;
-            .carrousel__list{
-                .carrousel__element{
-                    margin: 0;
-                    height: 80vh !important;
-                    width: 55vw !important;
-                    transition: ease-in-out .5s;
-                    padding: 1rem;
-                    img{
-                      width:100% !important;
-                      height:100%;
-                        
-                    }
-                    &:hover{
-                        transform: scale(1.1);
-                    }
+            margin: 0;
+            width: 100vw;
+            .carrousel__element{
+                transition: ease-in-out .5s;
+                padding: 1rem;
+                margin: 1rem;
+                width: 30vw;
+                margin: 1rem;
+ 
+                img{
+                    height: 100%;
+                    width: auto;
                 }
+                
             }
 
             //BUTTONS
@@ -58,11 +60,7 @@
                 cursor: pointer;
                 transition: ease-in-out .2s;
 
-                &:hover{
-                    opacity: 1;
-                    transform: scale(1.2);
-                   
-                }
+         
             }
         
             .carrousel__button-preview{
@@ -71,6 +69,11 @@
             }
             .carrousel__button-next{
                 right: 0;
+            }
+
+            .carrousel__list_Seminarios, .carrousel__list_Street, .carrousel__list_gestion, .carrousel__list_colaboraciones,.carrousel__list_news,.carrousel__list_trabajos{
+                height: 0;
+                overflow: hidden;
             }
         }
     

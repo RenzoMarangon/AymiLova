@@ -43,3 +43,5 @@ carrousels.forEach( carrousel => {
     glidr(carrousel,i) 
     i++;
 })
+
+

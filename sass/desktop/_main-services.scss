@@ -105,15 +105,16 @@
 
         }
 
-            //TODOS LOS DROPWDONW
-            .dropdown{
-                .dropdown__body{
-                    p{
-                        font-size: 2rem;
-                        padding: 2rem;
-                    }
-                }
-            }
+
     }
 }
-
+//TODOS LOS DROPWDONW
+.dropdown{
+    cursor:pointer;
+    .dropdown__body{
+        p{
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    }
+}

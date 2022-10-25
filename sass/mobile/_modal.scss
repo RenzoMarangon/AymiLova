@@ -29,19 +29,21 @@
 
             display: flex;
             margin: 0;
-            width: 100vw;
-            .carrousel__element{
-                transition: ease-in-out .5s;
-                padding: 1rem;
-                margin: 1rem;
-                width: 30vw;
-                margin: 1rem;
- 
-                img{
-                    height: 100%;
-                    width: auto;
-                }
+
+            .carrousel-listx{
                 
+                .carrousel__element{
+                    transition: ease-in-out .5s;
+                    padding: 1rem;
+                    height: 80vh !important;
+                    
+                    img{
+                        height: 100%;
+                        width: auto;
+                        
+                    }
+                    
+                }
             }
 
             //BUTTONS
